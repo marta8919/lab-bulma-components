@@ -1,10 +1,28 @@
-import React from 'react'
+import React, {Component} from 'react'
+
+// class CoolButton extends Component {
+//     render(){
+
+//         let myClass = "";
+
+//         if(this.props.isDanger){
+//             myClass += 'is-danger'
+//         }
+
+
+//         return (
+//             <button className={}> {this.props.children} </button>
+//         )
+//     }
+// }
+
+
 
 function CoolButton(props){
 
-    let classValue = "button is-small {"
+    let classValue = "button "
     if(props.isSuccess){
-        classValue += 'is-sucess'
+        classValue += 'is-success'
     }
     if(props.isDanger){
         classValue += 'is-danger'
@@ -20,8 +38,9 @@ function CoolButton(props){
     }
 
     return (
-        <button className={classValue}>{props.label}</button>
+        <button className={classValue}>{props.children}</button>
     );
 };
 
 export default CoolButton
+

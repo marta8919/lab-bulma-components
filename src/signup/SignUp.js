@@ -10,7 +10,7 @@ function SignUp(){
         <FormField label="Name" type="text" placeholder="e.g Alex Smith" />
         <FormField label="Email" type="email" placeholder="e.g. alexsmith@gmail.com" />
         <FormField label="Password" type="password" placeholder="Write here your password" />
-        <CoolButton label="Submit" is-danger/>
+        <CoolButton label="Submit" isSuccess>Submit</CoolButton>
     </React.Fragment>
     )
 

@@ -16,7 +16,7 @@ function Navbar (){
                         <span></span>
                     </div>
 
-                    <div id="navbarBasicExample" className="navbar-menu">
+                    <div id="navbarExampleTransparentExample" className="navbar-menu">
                         <div className="navbar-start">
                         <a className="navbar-item">
                             Home
@@ -26,9 +26,13 @@ function Navbar (){
 
                     <div className="navbar-end">
                         <div className="navbar-item">
-                            <div className="buttons">
-                            <CoolButton isSmall isSuccess className="is-link" label="Sign in"></CoolButton>
-                            <CoolButton isSmall isSuccess label="Sign up"></CoolButton>
+                            <div className="field is-grouped">
+                                <p className="control">
+                                    <CoolButton isDanger>Sign in</CoolButton>
+                                </p>
+                                <p className="contol">
+                                    <CoolButton isSmall isSuccess>Sign up</CoolButton>
+                                </p>
                             </div>
                         </div>
                     </div>
